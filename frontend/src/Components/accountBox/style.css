@@ -1,0 +1,14 @@
+.button-l{
+    font-family: 'Berlin Sans FB';
+    background-color:#fd9a34 ;
+    color: white;
+    border-radius: 50px ;
+    border: transparent;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    float: center;
+    opacity: 100%;
+    padding: 5px 13px;
+    margin-top: 15px;
+    margin-left: 75px;
+}

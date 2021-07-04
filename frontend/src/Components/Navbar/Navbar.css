@@ -1,0 +1,142 @@
+.navbar {
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    padding: 0;
+    display: inline-block;
+    justify-content: flex-start;
+    align-items: center;
+    position :relative ;
+  
+}
+
+.fa-bars {
+    color: #FB9224;
+    background: none;
+    margin-left: 3rem;
+    font-size: 2.4rem;
+    align-items: center;
+    margin-top: 30px;
+}
+.navbar-logo {
+    height: 70px;
+    width: auto;
+    align-items: center;
+    margin-left: 31rem;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+.navbar-but {
+    display: flex;
+    background-color:#fd9a34 ;
+    color: white;
+    border: transparent;
+    grid-gap: 15px;
+    font-size: 1.5rem;
+    opacity: 99%;
+    float: right;
+    margin-top: 20px;
+    margin-right: 60px;
+    border-radius: 50px ;
+}
+.nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-bottom: 5px;
+}
+.nav-links:hover{
+    text-decoration: none;
+    color: white;
+}
+.navbar-but:hover {
+    background-color:#2A1A5E  ;
+    border-radius: 50px ;
+}
+
+.nav-menu {
+    background-color: #FB9224;
+    color: white;
+    width: 290px;
+    height: 68vh;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left : -80% ;
+    transition: 850ms;
+    opacity: 92%;
+    border-radius: 20px ;
+    z-index: 9999;
+} 
+.nav-menu.active {
+    left: 0;
+    transition: 350ms;
+}
+.navbar-items{
+    width: 100%;
+    margin-left: -30px;
+}
+.navbar-toggle {
+    background-color: #FB9224;
+    font-size: 1.5rem;
+    width: 100%; 
+    margin-left: 0px;
+    margin-top: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+span {
+    margin-left: 16px;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
+}
+
+.nav-text a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 20px;
+}
+
+.nav-text a:hover {
+    color: #FB9224;
+    background-color: white;
+}
+
+.fa-times {
+    color: white;
+    margin-left: 12rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #2A1A5E  azr2 
+#fd9a34 bortoqali 
+
+*/ 
+

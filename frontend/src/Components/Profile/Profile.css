@@ -1,0 +1,26 @@
+.col-md-2 {
+  display: flex;
+  background-color: #fd9a34;
+  color: white;
+  border: transparent;
+  grid-gap: 15px;
+  font-size: 1.5rem;
+  opacity: 99%;
+  float: right;
+  margin-top: 20px;
+  margin-right: 60px;
+  border-radius: 50px;
+}
+.profile-edit-btn {
+  display: flex;
+  background-color: #fd9a34;
+  color: white;
+  border: transparent;
+  grid-gap: 15px;
+  font-size: 2rem;
+  opacity: 99%;
+  float: right;
+  margin-top: 20px;
+  margin-right: 60px;
+  border-radius: 50px;
+}

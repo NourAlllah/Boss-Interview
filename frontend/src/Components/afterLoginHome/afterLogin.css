@@ -1,0 +1,26 @@
+.mb-3 {
+    font-family: 'Berlin Sans FB';
+}
+
+.mb-4 {
+    font-family: 'Berlin Sans FB'; 
+}
+
+.btn-l {
+    background-color:#fd9a34 ;
+    color: white;
+    border: transparent;
+    font-weight: bold;
+    font-size: 1.1rem;
+    float: center;
+    opacity: 100%;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 50px ;
+}
+
+.mb-3 {
+    margin-top: -150px;
+    margin-left: 50px;
+}

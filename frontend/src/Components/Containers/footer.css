@@ -1,0 +1,73 @@
+.text-5{
+    color:  white;
+    font-size: 18px ;
+    display: table;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 380px;
+}
+.text-55 {
+    color:  white;
+    font-size: 18px ;
+    display: table;
+    font-weight: bold;
+    text-align: left;
+    margin-top: -15px;
+    margin-left: 380px;
+}
+.subscribe-mail-form-footer{
+    display: table;
+    
+}
+.input-email-footer{
+    display: block;
+    width: auto;
+    width: 300px;
+    height: 40px;
+    border: transparent;
+ /*  border-bottom: 3px solid #2A1A5E ; */
+    margin-top: 12px;
+    margin-left:  27rem;
+    border-radius: 50px ;
+}
+.input-email-footer:hover{
+    width: 300px;
+    border: none;
+    border-bottom: 3px solid   #2A1A5E;
+}
+
+.subscribe-but-footer{
+    display: block;
+    width: auto;
+    background-color: #2A1A5E;
+    border: none;
+    border-radius: 50px!important;
+    color: white;
+    padding: 7.5px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: -38px;
+    margin-bottom: 50px;
+    margin-left:  47rem;
+}
+.subscribe-but-footer:hover {
+    background-color:white  ;
+    color: #2A1A5E;
+    border-radius: 50px ;
+}
+
+
+.fa-facebook-f {
+    padding-right: 10px ;
+}
+.fa-instagram {
+    padding-right: 10px ;
+}
+.fa-twitter {
+    padding-right: 10px ;
+}
+.fa-youtube {
+    padding-right: 10px ;
+}
+/*
+*/

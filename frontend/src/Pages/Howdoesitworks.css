@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cotainer{
+    width: 80vw;
+    margin-bottom: 0;
+}
+.progresbar-tittle{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+    color: #fd9a34;
+    left: 9rem;
+    margin-right: 50px;   
+}
+.h3{
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.container input{
+    opacity: 0;
+}
+.section-howitworks{
+    position: relative;
+    width: 88%;
+    margin: auto;
+    height:25rem;
+    margin-top: 0px;
+    animation: trans 0.7s linear forwards;
+}
+ul.Nav{
+    padding-top: 15px;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    margin-top: -200px;
+    margin-left: 35px;
+}
+ul.Nav li{
+    list-style: none;
+    float: left;
+    width: 15%;
+    text-align: center;
+    color: #2A1A5E ;
+    text-transform: uppercase;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.3 ease;
+    vertical-align: middle;
+    height: 60px;
+    position: relative;
+}
+
+ul.Nav li::before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fcdc54;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    transition: all 0.3 ease;
+}
+ul.Nav li:hover::before{
+    border: 2px solid #fff;
+    background-color: #fd9a34;
+}
+ul.Nav li .inner{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-bottom: 4px;
+}
+ul.Nav li.active,
+ul.Nav li:hover{
+    color: darkblue;
+}
+
+ul.Nav li::after{
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    background-color: #fcdc54;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,1.1);
+}
+ul.Nav li:hover::after,
+ul.Nav li.active::after{
+    background-color: #fd9a34;
+}
+.line{
+    width: 58%;
+    margin: auto;
+    background-color: #eee;
+    height: 6px;
+    position: absolute;
+    left: 16.3%;
+    margin-top: -120px;
+    z-index: 1;
+    border-radius: 50px;
+}
+.line span{
+    content: '';
+    width: 0.1%;
+    height: 90%;
+    left: -20px;
+    position: absolute;
+    background-image: linear-gradient(to right, darkblue 0%, #2A1A5E 100%  );
+    z-index: 2;
+    border-radius: 100%;
+    transition: all 0.8s ease;
+}
+
+.content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    animation: anim 0.7s linear forwards;
+    margin-top: 230px;
+}
+.head{
+    margin-bottom: 50px;
+}
+section{
+    width: 70%;
+    margin-right: 63px;
+    background-image: linear-gradient(to right, darkblue 0%, #2A1A5E 100%  );
+    border-radius: 5px;
+    padding:30px;
+    color: white;
+}
+section span{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+h1{
+    font-weight: 900;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+section p{
+    padding: 30px 40px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+.register:checked ~.head .Nav li.st1::before,
+
+.edit-profile:checked ~.head .Nav li.st1::before,
+.edit-profile:checked ~.head .Nav li.st2::before,
+
+.book-interview:checked ~.head .Nav li.st1::before,
+.book-interview:checked ~.head .Nav li.st2::before,
+.book-interview:checked ~.head .Nav li.st3::before,
+
+.do-the-interview:checked ~.head .Nav li.st1::before,
+.do-the-interview:checked ~.head .Nav li.st2::before,
+.do-the-interview:checked ~.head .Nav li.st3::before,
+.do-the-interview:checked ~.head .Nav li.st4::before,
+
+.send-feedback:checked ~.head .Nav li.st1::before,
+.send-feedback:checked ~.head .Nav li.st2::before,
+.send-feedback:checked ~.head .Nav li.st3::before,
+.send-feedback:checked ~.head .Nav li.st4::before,
+.send-feedback:checked ~.head .Nav li.st5::before{
+    border: 2px solid  white;
+    background-color: #fd9a34;
+    transition: all 0.3 ease;
+}
+.register:checked  ~.head .line span{
+    width: 0%;
+}
+.edit-profile:checked  ~.head .line span
+{
+    width: 25%;
+}
+.book-interview:checked  ~.head .line span{
+    width: 50%;
+}
+.do-the-interview:checked  ~.head .line span{
+    width: 75%;
+}
+.send-feedback:checked  ~.head .line span{
+    width: 100%;
+}
+.register-section,
+.edit-profile-section,
+.book-interview-section,
+.do-the-interview-section,
+.send-feedback-section{
+    transform:scale(0);
+    transform-origin: center bottom;
+    transition: all 0.7s ease;
+    position: absolute;
+    top: 0;
+}
+.register:checked  ~.head .content .register-section,
+.edit-profile:checked  ~.head .content .edit-profile-section,
+.book-interview:checked  ~.head .content .book-interview-section,
+.do-the-interview:checked  ~.head .content .do-the-interview-section,
+.send-feedback:checked  ~.head .content .send-feedback-section{
+    display: block;
+    transform: scale(1);
+    transform-origin: bottom ;
+}
+
+
+@keyframes anim{
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes trans{
+    0%{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

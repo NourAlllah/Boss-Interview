@@ -1,0 +1,53 @@
+.book-but{
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    width: 150px;
+    background-color: #2A1A5E;
+    border: none;
+    border-radius: 50px!important;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left:  2rem;
+}
+.book-but:hover {
+    background-color:#FB9224 ;
+    color: #2A1A5E;
+    border-radius: 50px ;
+}
+
+
+.book-Con {
+     background-image: url(./BookInterview.jpg) ; 
+     opacity: 90%;
+     background-blend-mode: darken;
+     object-fit: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     max-width: 100%;
+     max-height: 100%;
+     min-height: 50%;
+     background-size: 100% 100%;
+     z-index: -1;
+     
+}
+ body{
+    height: 150vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    overflow-x:none;
+ }
+ 
+
+ .MuiPickersDay-daySelected {
+    color: #fff;
+    font-weight: 500;
+    background-color: #FB9224;
+}
+
+ 

@@ -1,0 +1,26 @@
+.submit-but-rate{
+    display: block;
+    width: auto;
+    background-color: #2A1A5E;
+    border: none;
+    border-radius: 50px!important;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: -10px;
+    margin-left:  1rem;
+}
+.submit-but-rate:hover {
+    background-color:#FB9224 ;
+    color: #2A1A5E;
+    border-radius: 50px ;
+}
+.rateUs-text{
+    color:  #2A1A5E;
+    font-size: 50px ;
+    display: table;
+    font-weight: bold;
+    text-align: left;
+    margin-left: -10px;
+}

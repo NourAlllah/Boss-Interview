@@ -1,0 +1,37 @@
+.form-control {
+    border-radius: 50px ;
+    border-color:white;
+    padding: 19.5px 20px;
+    margin-top: 40px;
+    margin-left: 415px;
+    float: center;
+    font-size: 1rem;
+    font-family: 'Berlin Sans FB';  
+}
+
+.btnn-5:hover {
+
+    background-color: #372571; 
+    color: white;
+}
+
+.btnn-5 {
+    font-family: 'Berlin Sans FB';
+    background-color:#2A1A5E ;
+    color: white;
+    border: transparent;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    float: center;
+    opacity: 100%;
+    padding: 8px 20px;
+    margin-top: -62px;
+    margin-left: 455px;
+    border-radius: 50px ;
+}
+
+.text {
+    font-family: 'Berlin Sans FB';
+    margin-top: 50px;
+    margin-left: -40px;
+}

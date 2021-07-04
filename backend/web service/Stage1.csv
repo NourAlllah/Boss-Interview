@@ -1,0 +1,18 @@
+id,question,comparefile,time
+1,"In two minutes tell me about your self?
+",q1.txt,18
+2,"what are your strenght points?
+",q2.txt,18
+3,"what do you consider to be your weakness?
+",q3.txt,18
+4,"How do you evaluate success
+
+",q4.txt,18
+5,"How do you motivate a person or a team?
+",q5.txt,18
+6,what is your bjective in life ?,q6.txt,18
+7,Tell me about a time you dimonstrate your leadership skills?,q7.txt,18
+8,What is the accomplishment you are most proud of in your life?,q8.txt,18
+9,How do you deal with pressure r stressful situations?,q9.txt,18
+10,"Do You Prefer to Work as a Team or Independently and why?
+",q10.txt,18

@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './Howdoesitworks.css';
-import Navbar from './../Components/Navbar/Navbar';
-import { SideBarData } from './../Components/SideBarData';
-import { FooterContainer } from './../Components/Containers/footer';
+
 
 function Howdoesitworks() {
 
@@ -14,8 +12,8 @@ function Howdoesitworks() {
 
      return (
          <>
-          <Navbar screenName={'Log in'} nextNav={'/signupin'} arr={ SideBarData }/>
-        <div className='section-howitworks'>
+         <div className='section-howitworks' id='howdoesitwork'>
+            
             <div className="container">
                     <input type='radio' className='register'  id=''  name='flash' checked={registerVisible}  />
                     <input type='radio'  className='edit-profile'   id=''  name='flash' checked={editProfileVisible}  />
@@ -100,7 +98,6 @@ function Howdoesitworks() {
                 
             </div>
         </div>
-        <FooterContainer />
          </>
      )
  }

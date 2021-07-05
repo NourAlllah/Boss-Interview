@@ -3,9 +3,10 @@ import React, { useState, useEffect } from "react"
 import {useHistory} from 'react-router'
 import "./InterviewPage.css"
 import Loader from "./Loader/Loader"
-import { FooterContainer } from './Containers/footer';
+
 import Navbar from './Navbar/Navbar';
 import { SidebarLogged } from './SidebarLogged';
+import Footlog from './Containers/f-log';
 
 const SpeechRecognition =
 window.SpeechRecognition || window.webkitSpeechRecognition
@@ -105,19 +106,19 @@ function InterviewPage() {
   return (
     <>
       <Navbar screenName={'Log out'} nextNav={'/'} arr={ SidebarLogged }/>
-      <h1>Intervew Records</h1>
+      <h2>No matter what happens, use it as an experience to grow from. Best of luck!</h2>
 
       <div className='IV-container'>
         <div className='box'>
-          {endInterview ? <h1>Thank you</h1> :(<>
-            {question === "" ? <Loader /> :question ===undefined?<h2>Don</h2>: <h2 key={i}>{question.question}</h2>}
+          {endInterview ? <h1>Thank you,Boss!</h1> :(<>
+            {question === "" ? <Loader /> :question ===undefined?<h1>Done</h1>: <h3 key={i}>{question.question}</h3>}
             {isListening ? <span>🎙️</span> : <span>🛑</span>}
             <button
               className='interview-buttons'
               onClick={handleSaveNote}
               disabled={!note}
             >
-              Save Note
+              Save Answer
             </button>
             <button
               className='interview-buttons'
@@ -130,24 +131,25 @@ function InterviewPage() {
           
         </div>
         <div className='box'>
-          <h2>Note</h2>
+          <h3>Answers</h3>
      
           {savedNotes.map((n,i) => (
             <p key={i}>{n}</p>
           ))}
           <button className='interview-buttons' onClick={endInterviewHandler}> End Interview </button>
-          <button className='interview-buttons' onClick={viewFeedbackHandler}> View Feedback </button>
+          
           
 
         </div>
         <br/>
-          <div className='box'>
-            <h1>Feedback</h1>
+          
+      </div>
+      <div className='box-2'>
+            <h3>Feedback</h3>
           {feedback && <p>{JSON.parse(feedback)[0].fields.feedback_text}</p>}
 
-          </div>
-      </div>
-      <FooterContainer />
+        </div>
+      <Footlog/>
     </>
   )
 }

@@ -9,17 +9,45 @@
     min-height: 20rem;
     margin: 30px;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 50px;
+    margin-top: 5px;
   }
+  .box-2 {
+    box-shadow: -4px 10px 35px -1px rgba(0, 0, 0, 0.75);
+    min-height: 20rem;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 5px;
   
+  }
   h1 {
+    color:#FB9224 ;
+    text-align: center;
+    font-family: 'Berlin Sans FB';
+}
+  h2 {
     margin-left: 20px;
+    margin-top: 40px;
+    color:#2A1A5E  ;
+    font-family: 'Berlin Sans FB';
+    text-align: center;
+  }
+  h3 {
+    font-family: 'Berlin Sans FB';
+    color:#2A1A5E ;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-right: 25px;
+
   }
   
   .interview-buttons {
     float: right;
     margin: 10px;
     padding: 10px;
-    border-radius: 5px;
-    background: transparent;
+    border-radius: 50px;
+    font-family: 'Berlin Sans FB';
+    color: #FB9224;
+    font-weight: lighter;
   }

@@ -1,61 +1,9 @@
-import React , { useState}from "react";
-import Footer from "./../Footer/index";
-import "./footer.css";
-import axios from 'axios';
+import React from "react";
+import Footer from './../Footer/index';
 
-
-
-export function FooterContainer() {
-
-    const [email,setEmail] = useState('')
-
-    const submitHandler =async (e) =>{
-        e.preventDefault()
-    
-    
-        try{
-    
-            await axios.post('/api/subscribe/',{email})
-            console.log('submited....',email)
-        }catch(e){
-            console.log(e)
-        }
-    
-    }
-    
-
-
-
-
+function Footlog() {
   return (
     <Footer>
-      <div>
-        <p className="text-5">
-          Handcrafted & curated material for every stage of career grooming
-        </p>
-        <p className="text-55">
-          & industry insights, delivered to your inbox.
-        </p>
-
-        <form onSubmit={submitHandler} className="subscribe-mail-form-footer">
-          <input
-            className="input-email-footer"
-            type="email"
-            placeholder="  Enter your Email"
-            aria-required="true"
-            aria-invalid="true"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <button
-            type="submit"
-            className="subscribe-but-footer"
-            variant="primary"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
-
       <Footer.Wrapper>
         <Footer.Row>
           <Footer.Column>
@@ -98,4 +46,5 @@ export function FooterContainer() {
     </Footer>
   );
 }
-export default FooterContainer;
+
+export default Footlog;

@@ -47,7 +47,7 @@ export const MutedLink = styled.a`
   color: rgba(200, 200, 200, 0.8);
   font-weight: 300;
   text-decoration: none;
-  margin-top: -30px;
+  margin-bottom:10px;
 `;
 
 export const BoldLink = styled.a`
@@ -80,4 +80,4 @@ export const SubmitButton  = styled.button`
   &:hover {
     filter: brightness(1.03);
   }
-`;
+`

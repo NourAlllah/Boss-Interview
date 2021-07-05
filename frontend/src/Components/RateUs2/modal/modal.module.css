@@ -1,3 +1,6 @@
+*{
+  font-family: 'Berlin Sans FB'; 
+}
 .modal {
     position: fixed;
     display: block;
@@ -33,7 +36,7 @@
     min-height: 20px;
     min-width: 200px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 20px;
     border-radius: 4px;
     padding-bottom: 20px;
@@ -44,6 +47,7 @@
     transform: scale(0.6);
     transition: opacity 250ms 250ms ease, transform 300ms 250ms ease;
     transform: scale(0);
+    font-family: 'Berlin Sans FB'; 
   }
   
   .visible .modal__wrap {

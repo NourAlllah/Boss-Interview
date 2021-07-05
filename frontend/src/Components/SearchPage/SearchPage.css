@@ -1,12 +1,14 @@
+
 .form-control {
     border-radius: 50px ;
     border-color:white;
     padding: 19.5px 20px;
     margin-top: 40px;
-    margin-left: 415px;
+    margin-left: 340px;
     float: center;
     font-size: 1rem;
     font-family: 'Berlin Sans FB';  
+    margin-bottom: 20rem;
 }
 
 .btnn-5:hover {
@@ -25,8 +27,8 @@
     float: center;
     opacity: 100%;
     padding: 8px 20px;
-    margin-top: -62px;
-    margin-left: 455px;
+  margin-top: -44rem;
+    margin-left: 410px;
     border-radius: 50px ;
 }
 
@@ -34,4 +36,5 @@
     font-family: 'Berlin Sans FB';
     margin-top: 50px;
     margin-left: -40px;
+    color: #2A1A5E;
 }

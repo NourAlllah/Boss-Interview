@@ -51,34 +51,56 @@ export function SignupForm() {
 
   return (
     <BoxContainer>
-      <form onSubmit={submitHandler}>
+    <form onSubmit={submitHandler}>
       {hasError ? (
-          <Message variant='danger'>Invalid Email or Password!!</Message>
-        ) : (
-          ""
-        )}
-        {hasConfirmError ? (
-          <Message variant='warning'>Passwords are not match!!</Message>
-        ) : (
-          ""
-        )}
-        <Input type="text" placeholder="First Name" onChange={(e)=>setFirstName(e.target.value)} />
-        <Input type="text" placeholder="Second Name" onChange={(e)=>setSecondName(e.target.value)} />
-        <Input type="email" placeholder="Email" onChange={(e)=>setEmail(e.target.value)} />
-        <Input type="password" placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
-        <Input type="password" placeholder="Confirm Password" onChange={(e)=>setConfirmPassword(e.target.value)} />
-        <button className="button-l" type="submit">Signup</button>
-      </form>
-      <Marginer direction="vertical" margin={10} />
-      
-      <Marginer direction="vertical" margin="1em" />
-      <MutedLink href="#" >
-        Already have an account?
+        <Message variant="danger">Invalid Email or Password!!</Message>
+      ) : (
+        ""
+      )}
+      {hasConfirmError ? (
+        <Message variant="warning">Passwords are not match!!</Message>
+      ) : (
+        ""
+      )}
+      <Input
+        type="text"
+        placeholder="First Name"
+        onChange={(e) => setFirstName(e.target.value)}
+      />
+      <Input
+        type="text"
+        placeholder="Second Name"
+        onChange={(e) => setSecondName(e.target.value)}
+      />
+      <Input
+        type="email"
+        placeholder="Email"
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <Input
+        type="password"
+        placeholder="Password"
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <Input
+        type="password"
+        placeholder="Confirm Password"
+        onChange={(e) => setConfirmPassword(e.target.value)}
+      />
+      <button className="button-l" type="submit">
+        Signup
+      </button>
+    </form>
+    <Marginer direction="vertical" margin={10} />
+
+    <Marginer direction="vertical" margin="1em" />
+    <MutedLink href="#">
+      Already have an account?
       <BoldLink href="#" onClick={switchToSignin}>
-          Login
-        </BoldLink>
-      </MutedLink>
-    </BoxContainer>
-  );
+        Login
+      </BoldLink>
+    </MutedLink>
+  </BoxContainer>
+);
 }
 /* href='/UserHome' */

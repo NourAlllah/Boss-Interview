@@ -14,7 +14,8 @@ import { createMuiTheme } from "@material-ui/core"
 import { ThemeProvider } from "@material-ui/styles"
 import Navbar from './../Navbar/Navbar';
 import { SidebarLogged } from './../SidebarLogged';
-import { FooterContainer } from './../Containers/footer';
+import Footlog from "./../Containers/f-log";
+
 import axios from 'axios'
 
 
@@ -93,67 +94,67 @@ function BookInterview() {
   /*<img src="BookInterview.jpg" alt="BookInterview.jpg"/>*/
   return (
     <>
-      <Navbar screenName={'Log out'} nextNav={'/'} arr={ SidebarLogged }/>
-    <div style={styles.container} className='book-Con'>
-      <br></br>
-      <br></br>
-      <div className='Animation'>
-        <Typewriter
-          onInit={(typewriter) => {
-            typewriter
-              .typeString("Hello Nancy!")
-              .callFunction(() => {
-                alert("Don't miss your appointment")
-              })
-              .pauseFor(1000)
-              .deleteAll()
-              .typeString("Book Your Interview Now!!")
-              .start()
-          }}
-        />
+     <Navbar screenName={"Log out"} nextNav={"/"} arr={SidebarLogged} />
+      <div style={styles.container} className="book-Con">
+        <br></br>
+        <br></br>
+        <div className="Animation">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("Hello !")
+                .callFunction(() => {
+                  alert("Don't miss your appointment");
+                })
+                .pauseFor(1000)
+                .deleteAll()
+                .typeString("Book Your Interview Now!!")
+                .start();
+            }}
+          />
+        </div>
+        <br></br>
+        <br></br>
+        <div className="Book">
+          <MuiPickersUtilsProvider utils={DateFnsUtils}>
+            <ThemeProvider theme={materialTheme}>
+              <Grid container justify="space-around">
+                <KeyboardDatePicker
+                  disableToolbar
+                  style={{ width: "100%", marginTop: "15px" }}
+                  variant="dialog"
+                  format="MM/dd/yyy"
+                  minDate={new Date()}
+                  margin="normal"
+                  id="date-picker"
+                  label="Select a date"
+                  value={selectedDate}
+                  onChange={handleDateChange}
+                />
+              </Grid>
+              <Grid container justify="space-around">
+                <KeyboardTimePicker
+                  style={{ width: "100%", marginTop: "15px" }}
+                  margin="normal"
+                  id="time-picker"
+                  label="Select a time"
+                  value={selectedTime}
+                  onChange={handleTimeChange}
+                />
+              </Grid>
+            </ThemeProvider>
+          </MuiPickersUtilsProvider>
+          <button
+            onClick={clickHandler}
+            className="book-but"
+            variant="primary"
+            type="button"
+          >
+            Book
+          </button>
+        </div>
       </div>
-      <br></br>
-      <br></br>
-      <div className='Book'>
-        <MuiPickersUtilsProvider utils={DateFnsUtils}>
-          <ThemeProvider theme={materialTheme}>
-            <Grid container justify='space-around'>
-              <KeyboardDatePicker
-                disableToolbar
-                style={{ width: "100%", marginTop: "15px" }}
-                variant='dialog'
-                format='MM/dd/yyy'
-                minDate={new Date()}
-                margin='normal'
-                id='date-picker'
-                label='Select a date'
-                value={selectedDate}
-                onChange={handleDateChange}
-              />
-            </Grid>
-            <Grid container justify='space-around'>
-              <KeyboardTimePicker
-                style={{ width: "100%", marginTop: "15px" }}
-                margin='normal'
-                id='time-picker'
-                label='Select a time'
-                value={selectedTime}
-                onChange={handleTimeChange}
-              />
-            </Grid>
-          </ThemeProvider>
-        </MuiPickersUtilsProvider>
-        <button
-          onClick={clickHandler}
-          className='book-but'
-          variant='primary'
-          type='button'
-        >
-          Book
-        </button>
-      </div>
-    </div>
-    <FooterContainer />
+      <Footlog />
         </>
   );
 }

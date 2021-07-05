@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-import {useHistory} from 'react-router'
+import {useHistory} from 'react-router';
 import "./Rate.css";
 import Button from "./button/Button";
 import Modal from "./modal/Modal";
 import { FaStar } from "react-icons/fa";
-import axios from 'axios'
+import axios from 'axios';
+import Navbar from './../Navbar/Navbar';
+import { SidebarLogged } from './../SidebarLogged';
+import Footlog from './../Containers/f-log';
 
 
 const colors ={
@@ -44,22 +47,24 @@ function RateRun() {
   }
 
   return (
+    <>
+    <Navbar screenName={'Log out'} nextNav={'/'} arr={ SidebarLogged }/>
     <React.Fragment>
       <div className="rateCon"
         style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          height: "100vh"
+          height: "95vh"
+        
         }}
       >
-        <Button onClick={() => setShow(true)}>Rate Us</Button>
+        <Button className='btn-rate-us-inv' onClick={() => setShow(true)}>Rate Us</Button>
       </div>
       <Modal show={show} onClose={() => setShow(false)}>
       <div style={styles.container}>  
-        <div style={styles.stars}>
-          <br></br>
-          <br></br>
+        <div className='STARS' style={styles.stars}>
+          
             {stars.map((_, index) => {
                 return (
                     <FaStar
@@ -82,15 +87,17 @@ function RateRun() {
         <textarea
                  placeholder="what's your feedback?"
                  style={styles.textarea}
-                 onChange={(e)=>setReview(e.target.value)}
                  />
-                 <button className='submit-but-rate' variant="primary" type="submit" onClick={submitHandler}>
+                 <button className='rateus-btn' variant="primary" type="submit">
                         Submit
                     </button>
         </div>
       </Modal>
+      <Footlog/>
     </React.Fragment>
-  );
+
+  </>
+);
 
   
 }

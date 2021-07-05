@@ -10,6 +10,7 @@ import PressHereButton from "./PressHereButton"
 import Navbar from "./Navbar/Navbar"
 import { SideBarData } from "./SideBarData"
 import FooterContainer from "./Containers/footer"
+import Howdoesitworks from "./../Pages/Howdoesitworks"
 
 function Home() {
     const [email,setEmail] = useState('')
@@ -52,7 +53,7 @@ const submitHandler =async (e) =>{
             Interviews are crucial moments in one's career,
           </p>
           <p className='text-33'>
-            So wehere to help you practice freely until you{" "}
+            So wehere to help you practice freely until you
           </p>
           <p className='text-333'>are fully prepared to the real Interviews.</p>
 
@@ -78,15 +79,18 @@ const submitHandler =async (e) =>{
         </div>
       </div>
 
-      <div className='section2-howitworks'></div>
+      <div className="section2-howitworks" id="howdoesitwork">
+        <h1 className="topic"> How Does It Works?! </h1>
+        <Howdoesitworks />
+      </div>
      
       <div className='section3-aboutus' id="aboutUs" >
-        <h1 className='topic'>About Us</h1>
+       
         <Fade top>
           <h2 className='header'> Our Mission</h2>
         </Fade>
         <p className='about-content'>
-          {" "}
+         
           Development of mock interviews covers all Hr sides , languages and
           discovering selves in points of strenghts and weaknesses thou & Soon
           in all work fields. First aim is ice breaking of interview's fear and
@@ -105,7 +109,7 @@ const submitHandler =async (e) =>{
        
       </div>
       <div  className='section5-footer' id="footer" >
-      <FooterContainer  />
+      <FooterContainer />
       </div>
     </>
   )

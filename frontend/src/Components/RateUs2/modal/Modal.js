@@ -2,9 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Button from "../button/Button";
 import CloseIcon from "../CloseIcon";
 import styles from "./modal.module.css";
-import Navbar from "../../Navbar/Navbar";
-import { FooterContainer } from './../../Containers/footer';
-import { SidebarLogged } from './../../SidebarLogged';
+
 
 const Modal = ({ modalStyle, children, show, onClose, backdropStyle }) => {
   const modalRef = useRef(null);
@@ -17,14 +15,13 @@ const Modal = ({ modalStyle, children, show, onClose, backdropStyle }) => {
   }, [show]);
   return (
     <>
-    <Navbar screenName={'Log out'} nextNav={'/'} arr={ SidebarLogged }/>
     <React.Fragment>
       <div ref={modalRef} style={backdropStyle} className={`${styles.modal}`}>
         <Button
           onClick={onClose}
           style={{
             width: 60,
-            height: 40,
+            height: 60,
             position: "absolute",
             top: 0,
             right: 0,
@@ -45,7 +42,6 @@ const Modal = ({ modalStyle, children, show, onClose, backdropStyle }) => {
         </div>
       </div>
     </React.Fragment>
-           <FooterContainer />
     </>
   );
 };

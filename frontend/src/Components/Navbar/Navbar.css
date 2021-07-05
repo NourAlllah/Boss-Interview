@@ -50,15 +50,16 @@
     color: white;
 }
 .navbar-but:hover {
-    background-color:#2A1A5E  ;
     border-radius: 50px ;
+    background-color: #ffb048; 
+    color: white;
 }
 
 .nav-menu {
     background-color: #FB9224;
     color: white;
     width: 290px;
-    height: 68vh;
+    height: 27rem;
     display: flex;
     justify-content: flex-start;
     position: fixed;

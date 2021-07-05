@@ -4,6 +4,7 @@
 
 .mb-4 {
     font-family: 'Berlin Sans FB'; 
+    color: white;
 }
 
 .btn-l {
@@ -18,8 +19,12 @@
     margin-top: 20px;
     margin-right: 10px;
     border-radius: 50px ;
+    
 }
-
+.btn-l:hover {
+    color: white;
+    background-color: #ffb048; 
+}
 .mb-3 {
     margin-top: -150px;
     margin-left: 50px;
